@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .bgColor:hover{
+  background-color:rgba(39, 0, 130, 0.199) ;
+
+} */
+body {
+  background: rgb(188, 139, 255);
+  background: linear-gradient(135deg, rgba(188, 139, 255, 1) 0%, rgba(125, 131, 255, 1) 45%, rgba(173, 0, 255, 1) 100%);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.nevs:hover {
+  background-color: rgba(37, 26, 196, 0.233);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.PageBG {
+  background-color: rgba(255, 255, 255, 0.178);
+}
+
+td,
+tr,
+th {
+  padding: 5px 70px;
+
+
+}
+
+
+
+
+
+.active {
+  background-color: rgb(64, 42, 184);
+}
