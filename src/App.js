@@ -9,6 +9,9 @@ import Withdraw from "./components/dashboard/Withdraw";
 import Login from "./components/Login";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword"
+import bg1 from './image/bg05.png';
+import bg2 from './image/bg04.png';
+import bg3 from './image/bg3.png';
 
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react'
@@ -33,7 +36,19 @@ function App() {
     <WagmiConfig config={wagmiConfig}>
 
     <Router>
-    
+    <div className="relative w-full imgIndex -z-50 ">
+      <div className="absolute  top-0  left-0">
+           <img src={bg1}  alt="bg01"/>
+      </div>
+      <div className="absolute  top-0 left-0  md:block hidden">
+           <img  src={bg2} alt="bg02"/>
+      </div>
+      <div className="absolute  sm:top-0 top-80 right-0 sm:w-96  w-40">
+           <img  src={bg3} alt="bg02"/>
+      </div>
+    </div>
+
+
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="forgotPassword" element={<ForgotPassword />} />

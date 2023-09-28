@@ -7,14 +7,17 @@
   background-color:rgba(39, 0, 130, 0.199) ;
 
 } */
-body {
+/* body {
   background: rgb(188, 139, 255);
   background: linear-gradient(135deg, rgba(188, 139, 255, 1) 0%, rgba(125, 131, 255, 1) 45%, rgba(173, 0, 255, 1) 100%);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
+body {
+  background-color: #0b0b29; 
+}
 
 .nevs:hover {
   background-color: rgba(37, 26, 196, 0.233);
@@ -33,7 +36,7 @@ input[type=number] {
 }
 
 .PageBG {
-  background-color: rgba(255, 255, 255, 0.178);
+  background-color: rgba(0, 0, 0, 0.315);
 }
 
 td,
