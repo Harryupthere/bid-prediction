@@ -44,7 +44,6 @@ function Home() {
  };
  
  let res = await axios(config1)
- console.log(res)
  if (res.response) {
  
  } else {
@@ -63,7 +62,7 @@ function Home() {
   };
 
 let res=  await axios(config1)
-console.log(res)
+//console.log(res)
 if(res.response){
 console.log(res.response.data.message);
 
