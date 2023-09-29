@@ -25,7 +25,7 @@ setTimeout(() => {
 }, 2000);
   }
   return (
-    <div className="flex justify-start items-start flex-col  lg:flex-row w-screen h-fit pr-20 ">
+    <div className="flex justify-start items-start flex-col  lg:flex-row w-screen h-fit pr-20 overflow-hidden ">
       <nav
         className={`h-full bg-black/50 ${
           open === false ? "md:w-48" : "md:w-14"
@@ -37,13 +37,13 @@ setTimeout(() => {
         >
           <div>
             {open === false ? (
-              <MenuIcon className="text-white  " />
+               <CloseIcon className="text-white  " />            
             ) : (
-              <CloseIcon className="text-white  " />
+              <MenuIcon className="text-white  " />
             )}
           </div>
         </div>
-        <div className="h-[95vh]  relative  ">
+        <div className="h-[105vh]  relative  ">
           <Link to="/dashboard/home">
             <div className="flex justify-start items-center p-4  w-full nevs ">
               <HomeIcon className="text-white  cursor-pointer" />
@@ -81,7 +81,7 @@ setTimeout(() => {
             </div>
           </Link>
           <Link to="//logout">
-            <div className="absolute bottom-10 w-full nevs">
+            <div className="absolute bottom-24 w-full nevs">
               <div className="flex justify-start  items-center p-4 text-white   " onClick={e=>{logOut(e)}}>
                 <BiLogOut className="text-2xl" />
                 <h1

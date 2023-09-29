@@ -132,7 +132,7 @@ function isValidEmail(email) {
                 value={form.password}
                 onChange={e=>{handleChange(e)}}
               />
-              <button className="absolute right-5">
+              <button className="absolute right-5 text-white">
                 {toggle === 1 ? (
                   <VisibilityIcon onClick={() => toggleTab(0)} />
                 ) : (

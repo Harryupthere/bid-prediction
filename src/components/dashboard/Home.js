@@ -178,13 +178,13 @@ if(res.response){
         <div className="  max-w-8xl mx-auto    flex justify-center items-center flex-col PageBG rounded-xl shadow-2xl w-full">
       
 
-        <div className=" rounded-tl-xl lg:rounded-tr-none rounded-tr-xl lg:rounded-bl-xl rounded-bl-none   flex  my-4 justify-center items-center flex-col space-x-4 w-full  ">
+        <div className=" w-full  px-4 2xl:px-40  md:px-12 mb-10">
             <Chart />
           </div>
           <div className=" rounded-br-xl  lg:rounded-tr-xl   rounded-tr-none  lg:rounded-bl-none rounded-bl-xl    flex  justify-center items-center flex-col  px-4  md:px-12  bg-transparent ">
             <div className="  rounded-xl     flex  justify-center items-center flex-col w-full ">
              
-              <div className="grid w-full mx-auto  grid-cols-1  sm:grid-cols-2  md:grid-cols-4 flex flex-col   gap-5">
+              <div className="grid w-full mx-auto  grid-cols-1  sm:grid-cols-2  lg:grid-cols-4 flex flex-col   gap-5">
                   <div className="relative w-full min-w-[200px] h-16 my-2 flex justify-center items-center flex-row ">
                     <input
                       type="number"
@@ -202,7 +202,7 @@ if(res.response){
                       } capitalize  h-full p-2 outline-none absolute`}>
 
                     <select
-                    className="w-full h-full bg-transparent border-none"
+                    className="w-full h-full bg-black border-none"
                       
                       value={selectedOption} onChange={handleSelectChange}
                       >
