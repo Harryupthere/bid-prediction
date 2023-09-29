@@ -380,8 +380,8 @@ function isValidEmail(email) {
                 </button>
               </div>
               {!errorAlert?
-              <span>
-                        please fill require fields
+              <span style={{color:'white'}}>
+                       ! please fill require fields !
               </span>
               :
               ''}
