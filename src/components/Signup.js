@@ -53,13 +53,13 @@ const signUp=async(e)=>{
         window.location.href = `${config.baseUrl}`
     }, 2000);
     }else{
-      toast.error(response.response.data.errors[0].msg)
+      toast.error(response.response.data.message)
 
     }
   }
   }catch(error){
-    console.log(error.response.data.errors[0].msg)
-    toast.error(error.response.data.errors[0].msg)
+    console.log(error.response.data.message)
+    toast.error(error.response.data.message)
 
   }
 }
