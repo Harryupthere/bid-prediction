@@ -38,7 +38,7 @@ export default function Chart() {
         new window.TradingView.widget({
           width:WidthFull,
           height: 600,
-          symbol: "NASDAQ:USDT",
+          symbol: "BINANCE:BTCUSDT",
           interval: "D",
           timezone: "Etc/UTC",
           theme: "dark",
