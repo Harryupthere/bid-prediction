@@ -32,7 +32,6 @@ const signUp=async(e)=>{
   e.preventDefault()
   try{
   let verify = verification()
-  console.log(verify)
   if(verify){
     setErrorAlert(true)
     
