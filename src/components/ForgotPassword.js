@@ -47,7 +47,8 @@ if(verify){
   }
 }
 }catch(error){
-
+  console.log(error.response.data.message)
+  toast.error(error.response.data.message)
 }
 }
 
@@ -60,7 +61,7 @@ const verification=()=>{
   if(!isValidEmail(form.email)){
     emailError='Email is incalid'
   }
-  formError({email:emailError})
+  setFormError({email:emailError})
   if(emailError.length>0){
     return false
   }
@@ -71,6 +72,7 @@ function isValidEmail(email) {
 }
     return (
         <>
+        <Toaster/>
       <div className="bg-center w-screen m-auto px-3 pt-20 pb-12 lg:block xl:px-0 ">
         <div className="lg:grid max-w-7xl mx-auto  grid-cols-1  md:grid-cols-2  flex flex-col flex-col-reverse  PageBG rounded-xl shadow-2xl">
           <div className=" lg:rounded-br-none rounded-br-xl  lg:rounded-tl-xl  rounded-tl-none  rounded-bl-xl py-10 sm:py-12    flex  justify-center items-center flex-col  px-4 sm:px-20  md:px-36  lg:px-12 xl:px-24 bg-transparent ">

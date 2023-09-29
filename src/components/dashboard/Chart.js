@@ -36,7 +36,7 @@ export default function Chart() {
         "TradingView" in window
       ) {
         new window.TradingView.widget({
-          width: 1200,
+          width:WidthFull,
           height: 600,
           symbol: "NASDAQ:AAPL",
           interval: "D",
