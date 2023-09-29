@@ -60,7 +60,7 @@ const verification=()=>{
   if(!isValidEmail(form.email)){
     emailError='Email is incalid'
   }
-  formError({email:emailError})
+  setFormError({email:emailError})
   if(emailError.length>0){
     return false
   }
