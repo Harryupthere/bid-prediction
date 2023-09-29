@@ -38,7 +38,7 @@ export default function Chart() {
         new window.TradingView.widget({
           width:WidthFull,
           height: 600,
-          symbol: "NASDAQ:AAPL",
+          symbol: "NASDAQ:USDT",
           interval: "D",
           timezone: "Etc/UTC",
           theme: "dark",
