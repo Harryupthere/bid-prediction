@@ -48,7 +48,7 @@ function Home() {
  if (res.response) {
  
  } else {
-   setRate(res.data)
+   setRate(res.data.rate)
  
  }
    }
