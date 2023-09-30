@@ -17,7 +17,7 @@
 
 body {
   background-color: #0b0b29; 
-  overflow-y: clip;
+  overflow-y: hidden;
 }
 
 .nevs:hover {
