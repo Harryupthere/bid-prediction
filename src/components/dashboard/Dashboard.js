@@ -2,33 +2,34 @@ import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import HomeIcon from "@mui/icons-material/Home";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import { BiMoneyWithdraw, BiLogOut } from "react-icons/bi";
 import { MdRealEstateAgent } from "react-icons/md";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import config from "../../config";
-import axios from 'axios';
+import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 function Dashboard() {
   var x = localStorage.getItem("token");
-  if(x==null || x==undefined){
-    window.location.href = `${config.baseUrl}`
+  if (x == null || x == undefined) {
+    window.location.href = `${config.baseUrl}`;
   }
   const [open, SetOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  const logOut=(e)=>{
-e.preventDefault()
-window.localStorage.clear();
-setTimeout(() => {
-  window.location.href = `${config.baseUrl}`
-}, 2000);
-  }
+  const logOut = (e) => {
+    e.preventDefault();
+    window.localStorage.clear();
+    setTimeout(() => {
+      window.location.href = `${config.baseUrl}`;
+    }, 2000);
+  };
   return (
     <div className="flex justify-start items-start flex-col  lg:flex-row w-screen h-fit pr-20 overflow-hidden ">
       <nav
         className={`h-full bg-black/50 ${
-          open === false ? "md:w-48" : "md:w-14"
+          open === false ? "md:w-64" : "md:w-14"
         }  duration-300 w-screen lg:flex justify-start items-start flex-col  mr-16  hidden`}
       >
         <div
@@ -37,7 +38,7 @@ setTimeout(() => {
         >
           <div>
             {open === false ? (
-               <CloseIcon className="text-white  " />            
+              <CloseIcon className="text-white  " />
             ) : (
               <MenuIcon className="text-white  " />
             )}
@@ -80,9 +81,58 @@ setTimeout(() => {
               </h1>
             </div>
           </Link>
+
+          <div
+            onClick={() => {
+              alert("Comming Soon...");
+            }}
+            className="flex justify-start  items-center p-4 text-white   w-full nevs"
+          >
+            <SportsEsportsIcon className="text-2xl" />
+            <h1
+              className={`text-white  mx-4 font-semibold duration-1000 ${
+                open === false ? "flex " : "hidden"
+              }`}
+            >
+              Flip A Coin
+            </h1>
+          </div>
+          <div 
+          onClick={() => {
+            alert("Comming Soon...");
+          }}
+          className="flex justify-start  items-center p-4 text-white   w-full nevs">
+            <SportsEsportsIcon className="text-2xl" />
+            <h1
+              className={`text-white  mx-4 font-semibold duration-1000 ${
+                open === false ? "flex " : "hidden"
+              }`}
+            >
+              Guess Colur
+            </h1>
+          </div>
+          <div
+          onClick={() => {
+            alert("Comming Soon...");
+          }}
+          className="flex justify-start  items-center p-4 text-white   w-full nevs">
+            <SportsEsportsIcon className="text-2xl" />
+            <h1
+              className={`text-white  mx-4 font-semibold duration-1000 ${
+                open === false ? "flex " : "hidden"
+              }`}
+            >
+              Wheel Of Luck
+            </h1>
+          </div>
           <Link to="//logout">
             <div className="absolute bottom-24 w-full nevs">
-              <div className="flex justify-start  items-center p-4 text-white   " onClick={e=>{logOut(e)}}>
+              <div
+                className="flex justify-start  items-center p-4 text-white   "
+                onClick={(e) => {
+                  logOut(e);
+                }}
+              >
                 <BiLogOut className="text-2xl" />
                 <h1
                   className={`text-white  mx-4 font-semibold duration-1000 ${
@@ -183,6 +233,47 @@ setTimeout(() => {
                       </h1>
                     </div>
                   </Link>
+
+                  <div
+            onClick={() => {
+              alert("Comming Soon...");
+              setToggle(!toggle);
+            }}
+            className="flex justify-start  items-center p-4 text-white   w-full nevs"
+          >
+            <SportsEsportsIcon className="text-2xl" />
+            <h1
+              className="text-white  mx-4 font-semibold duration-1000 "
+            >
+              Flip A Coin
+            </h1>
+          </div>
+          <div 
+          onClick={() => {
+            alert("Comming Soon...");
+            setToggle(!toggle)
+          }}
+          className="flex justify-start  items-center p-4 text-white   w-full nevs">
+            <SportsEsportsIcon className="text-2xl" />
+            <h1
+              className="text-white  mx-4 font-semibold duration-1000 "
+            >
+              Guess Colur
+            </h1>
+          </div>
+          <div
+          onClick={() => {
+            alert("Comming Soon...");
+            setToggle(!toggle)
+          }}
+          className="flex justify-start  items-center p-4 text-white   w-full nevs">
+            <SportsEsportsIcon className="text-2xl" />
+            <h1
+              className="text-white  mx-4 font-semibold duration-1000 "
+            >
+              Wheel Of Luck
+            </h1>
+          </div>
 
                   <Link to="/logout" onClick={() => setToggle(!toggle)}>
                     <div className="absolute bottom-10 w-full nevs">

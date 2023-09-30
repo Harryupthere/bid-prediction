@@ -200,7 +200,7 @@ function isValidEmail(email) {
                 </button>
               </Link>
 
-              <p className="antialiased font-sans text-md font-light leading-normal text-inherit mt-6 flex justify-end text-gray-100">
+              <p className="antialiased font-sans text-md font-light leading-normal text-inherit mt-6 flex justify-end text-white">
                 Don't have an account?
                 <span className="block antialiased font-sans  leading-normal  text-gray-100 underline ml-1 font-bold cursor-pointer">
                   <Link to="/signUp">Signup </Link>

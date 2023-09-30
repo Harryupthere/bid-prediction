@@ -37,7 +37,7 @@ export default function Chart() {
       ) {
         new window.TradingView.widget({
           width:WidthFull,
-          height: 600,
+          // height: 600,
           symbol: "BINANCE:BTCUSDT",
           interval: "D",
           timezone: "Etc/UTC",
