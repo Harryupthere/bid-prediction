@@ -26,12 +26,13 @@ function Home() {
 
   useEffect(() => {
     getBetTransactions()
-
+    getRateApi()
     getBalance()
+    
     setInterval(() => {
     getBetTransactions()
-    getRateApi()
-  }, 1000);
+    //getRateApi()
+  }, 3000);
 
   }, []);
 
